@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/ingredients_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="#EF554A"
+            android:textCursorDrawable="@null"
+            app:closeIcon="@drawable/ic_baseline_close_24"
+            app:goIcon="@drawable/ic_baseline_keyboard_arrow_right_24"
+            app:queryHint="請輸入食材名稱"
+            app:searchHintIcon="@drawable/ic_baseline_search_24"
+            app:searchIcon="@drawable/ic_baseline_search_24" />
+
+        <Button
+            android:id="@+id/Launch_Camera_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:text="開 啟 相 機"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:backgroundTint="#EF554A"
+            app:iconTint="#FFEB3B" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/hotlist_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</RelativeLayout>
